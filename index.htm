@@ -38,16 +38,16 @@ bVer = parseInt(navigator.appVersion);
 
 
 function openOrder() {
-	orderwin = window.open("../../orders.htm", "orderpage", "toolbar=no,status=yes,scrollbars=no,resizable=no,directories=no,menubar=no,width=370,height=475");
+	orderwin = window.open("./orders.htm", "orderpage", "toolbar=no,status=yes,scrollbars=no,resizable=no,directories=no,menubar=no,width=370,height=475");
 	if (ver == "n2") {
 		if (navigator.appVersion.indexOf("(X11") != -1 || navigator.appVersion.indexOf("(Mac") != -1) {
-			orderwin = window.open("../../orders.htm", "orderpage")  //mac bug fix
+			orderwin = window.open("./orders.htm", "orderpage")  //mac bug fix
 			}
 	}
 	if (orderwin != null) {
 		if(orderwin.opener == null) {
 			orderwin.opener = self;
-			orderwin.location = "../../orders.htm";
+			orderwin.location = "./orders.htm";
 		}
 	}
 }
@@ -1399,7 +1399,7 @@ function openXWingVsTie() {
         face="Arial"><br>
         <strong>Jan 6 96</strong></font></td>
         <td width="425"><a href="games/aeonflux/aeon_pr.htm"><font
-        color="#FF0000" size="4" face="Arial">Æon Flux</font></a><font
+        color="#FF0000" size="4" face="Arial">Ã†on Flux</font></a><font
         color="#FFFFFF" size="3" face="Arial"> </font><font
         color="#00FF00" size="3" face="Arial"><br>
         </font><font color="#C0C0C0" size="3" face="Arial">Our
